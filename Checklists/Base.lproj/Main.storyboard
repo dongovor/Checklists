@@ -44,7 +44,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="5bA-8c-VOB">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="T1h-qG-ggZ">
                             <connections>
-                                <segue destination="ifw-0V-dpw" kind="presentation" id="Zk2-xU-63A"/>
+                                <segue destination="ifw-0V-dpw" kind="presentation" identifier="AddItem" id="Zk2-xU-63A"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -71,12 +71,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1mE-Xy-r0E">
-                                                    <rect key="frame" x="8" y="6" width="359" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name of the Item" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1mE-Xy-r0E">
+                                                    <rect key="frame" x="8" y="7" width="359" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="GVv-Bj-maa" eventType="editingDidEndOnExit" id="0Su-mG-JcY"/>
+                                                        <outlet property="delegate" destination="GVv-Bj-maa" id="XRt-1k-4oA"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -95,12 +99,16 @@
                                 <action selector="cancel" destination="GVv-Bj-maa" id="KIv-Dg-zX9"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="KhD-rV-9oA">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="KhD-rV-9oA">
                             <connections>
                                 <action selector="done" destination="GVv-Bj-maa" id="UhQ-hv-9Ce"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneBarButton" destination="KhD-rV-9oA" id="cl6-CG-qaP"/>
+                        <outlet property="textField" destination="1mE-Xy-r0E" id="4Ef-jL-JWh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36L-Rw-f3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
