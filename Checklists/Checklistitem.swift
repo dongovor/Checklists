@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class Checklistitem {
     var text = " "
     var checked = false
@@ -17,4 +16,3 @@ class Checklistitem {
         checked = !checked
     }
 }
-
