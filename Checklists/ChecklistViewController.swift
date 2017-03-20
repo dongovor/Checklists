@@ -24,10 +24,12 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 
     //---------variables----------
     var items: [Checklistitem]
+    var checklist: Checklist!
     //----------------------------
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = checklist.name
         // Do any additional setup after loading the view, typically from a nib.
     }
 

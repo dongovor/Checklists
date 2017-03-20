@@ -6,6 +6,7 @@
 //  Copyright © 2017 Dmitry Cherkasov. All rights reserved.
 //
 // swiftlint:disable force_cast
+
 import Foundation
 
 class Checklistitem: NSObject, NSCoding {
