@@ -9,12 +9,23 @@
 
 import UIKit
 
-class Checklist: NSObject {
+class Checklist: NSObject, NSCoding {
     var name = " "
+    var items = [Checklistitem]()
+
+    required init?(coder aDecoder: NSCoder) {
+        name = aDecoder.decodeObject(forKey: "Name") as! String
+        items = aDecoder.decodeObject(forKey: "Items") as! [Checklistitem]
+        super.init()
+    }
+
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(name, forKey: "Name")
+        aCoder.encode(items, forKey: "Items")
+    }
 
     init(name: String) {
         self.name = name
         super.init()
     }
-
 }

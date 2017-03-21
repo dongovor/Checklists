@@ -61,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mB-1q-Phv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1182" y="26"/>
+            <point key="canvasLocation" x="1353" y="-428"/>
         </scene>
         <!--Add Checklist-->
         <scene sceneID="R5o-ZE-3ot">
@@ -114,7 +114,11 @@
                                 <action selector="cancel" destination="hc4-43-XOl" id="uYS-H3-Pis"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Done" id="r9z-F0-3SW"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Done" id="r9z-F0-3SW">
+                            <connections>
+                                <action selector="done" destination="hc4-43-XOl" id="P4R-KL-LZ0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -124,7 +128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBR-nT-C9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1182" y="758"/>
+            <point key="canvasLocation" x="2134" y="593"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hIa-eP-r0H">
@@ -140,7 +144,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRA-41-e0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425" y="758"/>
+            <point key="canvasLocation" x="1375" y="592"/>
         </scene>
         <!--Checklists-->
         <scene sceneID="dCg-H4-wOR">
@@ -229,7 +233,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36L-Rw-f3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="26"/>
+            <point key="canvasLocation" x="2975" y="-428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vcs-qG-VH3">
@@ -265,7 +269,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axt-7a-snI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1964" y="26"/>
+            <point key="canvasLocation" x="2135" y="-428"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
