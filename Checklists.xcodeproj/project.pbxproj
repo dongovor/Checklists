@@ -18,6 +18,7 @@
 		34C176A61E786B6B000F4842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C176A41E786B6B000F4842 /* LaunchScreen.storyboard */; };
 		34C176AE1E788DC8000F4842 /* Checklistitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C176AD1E788DC8000F4842 /* Checklistitem.swift */; };
 		34C176B01E78FEED000F4842 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C176AF1E78FEED000F4842 /* ItemDetailViewController.swift */; };
+		34F030B41E8320CF009AF070 /* IconPickerVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F030B31E8320CF009AF070 /* IconPickerVIewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		34C176A71E786B6B000F4842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34C176AD1E788DC8000F4842 /* Checklistitem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklistitem.swift; sourceTree = "<group>"; };
 		34C176AF1E78FEED000F4842 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		34F030B31E8320CF009AF070 /* IconPickerVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerVIewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				34291FB01E80688300B31834 /* Checklist.swift */,
 				34291FB21E8073AD00B31834 /* ListDetailViewController.swift */,
 				34291FB41E81C62800B31834 /* DataModel.swift */,
+				34F030B31E8320CF009AF070 /* IconPickerVIewController.swift */,
 				34C1769F1E786B6B000F4842 /* Main.storyboard */,
 				34C176A21E786B6B000F4842 /* Assets.xcassets */,
 				34C176A41E786B6B000F4842 /* LaunchScreen.storyboard */,
@@ -175,6 +178,7 @@
 				34C1769E1E786B6B000F4842 /* ChecklistViewController.swift in Sources */,
 				34291FB31E8073AD00B31834 /* ListDetailViewController.swift in Sources */,
 				34C176B01E78FEED000F4842 /* ItemDetailViewController.swift in Sources */,
+				34F030B41E8320CF009AF070 /* IconPickerVIewController.swift in Sources */,
 				34291FB11E80688300B31834 /* Checklist.swift in Sources */,
 				34C176AE1E788DC8000F4842 /* Checklistitem.swift in Sources */,
 				34291FB51E81C62800B31834 /* DataModel.swift in Sources */,
