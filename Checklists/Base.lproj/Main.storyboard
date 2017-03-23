@@ -81,9 +81,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the List" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-cf-hY8">
-                                                    <rect key="frame" x="8" y="6" width="359" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the List" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-cf-hY8">
+                                                    <rect key="frame" x="8" y="7" width="359" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -93,6 +92,12 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="F8t-cf-hY8" secondAttribute="trailing" constant="8" id="55r-XF-TTo"/>
+                                                <constraint firstItem="F8t-cf-hY8" firstAttribute="leading" secondItem="tV6-FR-ZLA" secondAttribute="leading" constant="8" id="9f6-9D-jXh"/>
+                                                <constraint firstItem="F8t-cf-hY8" firstAttribute="top" secondItem="tV6-FR-ZLA" secondAttribute="top" constant="7" id="Fgl-Fd-d6h"/>
+                                                <constraint firstAttribute="bottom" secondItem="F8t-cf-hY8" secondAttribute="bottom" constant="6" id="KkW-gh-Xyu"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -106,9 +111,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lit-nA-lbh">
-                                                    <rect key="frame" x="283" y="3" width="36" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lit-nA-lbh">
+                                                    <rect key="frame" x="306" y="4" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="4lg-0K-iZz"/>
+                                                        <constraint firstAttribute="height" constant="36" id="fX4-HT-Or8"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THC-GS-gLo">
                                                     <rect key="frame" x="23" y="11" width="42" height="21"/>
@@ -118,6 +126,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Lit-nA-lbh" firstAttribute="top" secondItem="ebC-yC-tZb" secondAttribute="top" constant="4" id="5ht-EL-9wR"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lit-nA-lbh" secondAttribute="trailing" id="HXH-Jm-Cg7"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Qry-Ca-x88" kind="show" identifier="PickIcon" id="Lyn-eT-2b5"/>
@@ -339,4 +351,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="3I0-fC-St2"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.015686274509803921" green="0.66274509803921566" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
 </document>
