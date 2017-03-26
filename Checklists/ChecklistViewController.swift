@@ -77,8 +77,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         }
     }
 
-// MARK: saving and loading
-
 // MARK: some custom methods
 
     func configureCheckmark(for cell: UITableViewCell, with item: Checklistitem) {
@@ -95,6 +93,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         let label = cell.viewWithTag(1000) as! UILabel
 
         label.text = item.text
+
     }
 
 // MARK: implementation ItemDetailViewController
